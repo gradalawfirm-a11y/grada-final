@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      content="GRADA — პროფესიონალური იურიდიული მომსახურება სამოქალაქო, ადმინისტრაციული და სისხლის სამართლის მიმართულებით."
+    />
+
+    <meta name="theme-color" content="#071842" />
+
+    <title>მთავარი | GRADA Law Firm</title>
+
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <!-- =====================================================
+     GRADA COOKIE CONSENT
+====================================================== -->
+
+  <div class="cookie-banner" id="cookieBanner" hidden>
+    <div class="cookie-banner-inner">
+      <div class="cookie-copy">
+        <p
+          class="cookie-title"
+          data-ka="თქვენი კონფიდენციალურობა მნიშვნელოვანია"
+          data-en="Your privacy matters"
+        >
+          თქვენი კონფიდენციალურობა მნიშვნელოვანია
+        </p>
+
+        <p
+          class="cookie-text"
+          data-ka="GRADA იყენებს აუცილებელ ტექნოლოგიებს საიტის გამართული მუშაობისთვის. თქვენი თანხმობის შემთხვევაში შეიძლება გამოყენებულ იქნეს დამატებითი ანალიტიკური ტექნოლოგიებიც."
+          data-en="GRADA uses essential technologies for the proper operation of the website. With your consent, additional analytics technologies may also be used."
+        >
+          GRADA იყენებს აუცილებელ ტექნოლოგიებს საიტის გამართული მუშაობისთვის.
+          თქვენი თანხმობის შემთხვევაში შეიძლება გამოყენებულ იქნეს დამატებითი
+          ანალიტიკური ტექნოლოგიებიც.
+        </p>
+
+        <a
+          class="cookie-policy-link"
+          href="cookie-policy.html"
+          data-ka="Cookie Policy"
+          data-en="Cookie Policy"
+        >
+          Cookie Policy
+        </a>
+      </div>
+
+      <div class="cookie-actions">
+        <button
+          class="cookie-btn cookie-btn-secondary"
+          id="cookieReject"
+          type="button"
+          data-ka="უარყოფა"
+          data-en="Reject"
+        >
+          უარყოფა
+        </button>
+
+        <button
+          class="cookie-btn cookie-btn-outline"
+          id="cookieManage"
+          type="button"
+          data-ka="პარამეტრები"
+          data-en="Preferences"
+        >
+          პარამეტრები
+        </button>
+
+        <button
+          class="cookie-btn cookie-btn-primary"
+          id="cookieAccept"
+          type="button"
+          data-ka="ყველას მიღება"
+          data-en="Accept all"
+        >
+          ყველას მიღება
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <body class="home-page">
+    <!-- HEADER -->
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <!-- LOGO -->
+        <a class="brand" href="index.html" aria-label="GRADA მთავარი გვერდი">
+          <img src="assets/logo.jpeg" alt="GRADA Law Firm" />
+        </a>
+
+        <!-- MOBILE MENU BUTTON -->
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="მენიუს გახსნა"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- NAVIGATION -->
+        <nav class="main-nav" id="mainNav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html" class="active" data-ka="მთავარი" data-en="Home">
+            მთავარი
+          </a>
+
+          <a href="about.html" data-ka="ჩვენ შესახებ" data-en="About Us">
+            ჩვენ შესახებ
+          </a>
+
+          <a href="services.html" data-ka="სერვისები" data-en="Services">
+            სერვისები
+          </a>
+
+          <a href="team.html" data-ka="გუნდი" data-en="Team"> გუნდი </a>
+
+          <a href="contact.html" data-ka="კონტაქტი" data-en="Contact">
+            კონტაქტი
+          </a>
+        </nav>
+
+        <!-- LANGUAGE SWITCH -->
+        <div class="language-switch" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ka" type="button">
+            KA
+          </button>
+
+          <span>/</span>
+
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main>
+      <!-- HERO SECTION -->
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="section-copy">
+            <p
+              class="eyebrow"
+              data-ka="GRADA საადვოკატო კომპანია"
+              data-en="GRADA LAW FIRM"
+            >
+              GRADA საადვოკატო კომპანია
+            </p>
+
+            <h1
+              data-ka="სამართლებრივი მხარდაჭერა, რომელიც თქვენს ინტერესებს ემსახურება."
+              data-en="Legal support built around your interests."
+            >
+              სამართლებრივი მხარდაჭერა, რომელიც თქვენს ინტერესებს ემსახურება.
+            </h1>
+
+            <p
+              class="hero-lead"
+              data-ka="პროფესიონალიზმი, პასუხისმგებლობა და შედეგზე ორიენტირებული სამართლებრივი სტრატეგია თითოეული კლიენტისა და თითოეული საქმისთვის."
+              data-en="Professionalism, responsibility and a clear legal strategy — for every client and every matter."
+            >
+              პროფესიონალიზმი, პასუხისმგებლობა და მკაფიო სამართლებრივი სტრატეგია
+              — თითოეული კლიენტისა და თითოეული საქმისთვის.
+            </p>
+
+            <div class="hero-actions">
+              <a
+                class="btn btn-primary"
+                href="services.html"
+                data-ka="იხილეთ სერვისები"
+                data-en="View services"
+              >
+                იხილეთ სერვისები
+              </a>
+
+              <a
+                class="btn btn-ghost"
+                href="contact.html"
+                data-ka="დაგვიკავშირდით"
+                data-en="Contact us"
+              >
+                დაგვიკავშირდით
+              </a>
+            </div>
+          </div>
+
+          <!-- DECORATIVE HERO ELEMENT -->
+          <div class="hero-panel reveal" aria-hidden="true">
+            <div class="hero-symbol">G</div>
+
+            <div class="hero-panel-line"></div>
+
+            <span> LAW FIRM </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVICES -->
+      <section class="section section-white">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker" data-ka="სერვისები" data-en="SERVICES">
+              სერვისები
+            </p>
+
+            <h2
+              data-ka="ძირითადი სამართლებრივი მიმართულებები"
+              data-en="Core legal services"
+            >
+              ძირითადი სამართლებრივი მიმართულებები
+            </h2>
+          </div>
+
+          <div class="cards-grid">
+            <!-- CIVIL LAW -->
+            <a class="service-card reveal" href="services.html#civil">
+              <span class="card-number"> 01 </span>
+
+              <h3 data-ka="სამოქალაქო სამართალი" data-en="Civil Law">
+                სამოქალაქო სამართალი
+              </h3>
+
+              <p
+                data-ka="კონსულტაცია, დოკუმენტაციის მომზადება და წარმომადგენლობა სამოქალაქო სამართლებრივ საკითხებში."
+                data-en="Advice, documentation and representation in civil law matters."
+              >
+                კონსულტაცია, დოკუმენტაციის მომზადება და წარმომადგენლობა
+                სამოქალაქო სამართლებრივ საკითხებში.
+              </p>
+
+              <span class="card-arrow"> ↗ </span>
+            </a>
+
+            <!-- ADMINISTRATIVE LAW -->
+            <a class="service-card reveal" href="services.html#administrative">
+              <span class="card-number"> 02 </span>
+
+              <h3
+                data-ka="ადმინისტრაციული სამართალი"
+                data-en="Administrative Law"
+              >
+                ადმინისტრაციული სამართალი
+              </h3>
+
+              <p
+                data-ka="სამართლებრივი მხარდაჭერა ადმინისტრაციულ ორგანოებთან ურთიერთობისა და ადმინისტრაციული დავებისას."
+                data-en="Legal support in dealings with administrative authorities and administrative disputes."
+              >
+                სამართლებრივი მხარდაჭერა ადმინისტრაციულ ორგანოებთან ურთიერთობისა
+                და ადმინისტრაციული დავებისას.
+              </p>
+
+              <span class="card-arrow"> ↗ </span>
+            </a>
+
+            <!-- CRIMINAL LAW -->
+            <a class="service-card reveal" href="services.html#criminal">
+              <span class="card-number"> 03 </span>
+
+              <h3 data-ka="სისხლის სამართალი" data-en="Criminal Law">
+                სისხლის სამართალი
+              </h3>
+
+              <p
+                data-ka="პროფესიონალური დაცვა და წარმომადგენლობა სისხლის სამართლის საქმის წარმოების სხვადასხვა ეტაპზე."
+                data-en="Professional defence and representation throughout different stages of criminal proceedings."
+              >
+                პროფესიონალური დაცვა და წარმომადგენლობა სისხლის სამართლის საქმის
+                წარმოების სხვადასხვა ეტაპზე.
+              </p>
+
+              <span class="card-arrow"> ↗ </span>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- VALUES -->
+      <section class="section values-section">
+        <div class="container values-grid">
+          <article class="value-block reveal">
+            <span> 01 </span>
+
+            <h3 data-ka="პროფესიონალიზმი" data-en="Professionalism">
+              პროფესიონალიზმი
+            </h3>
+
+            <p
+              data-ka="მაღალი პროფესიული სტანდარტი თითოეულ საქმეში."
+              data-en="A high professional standard in every matter."
+            >
+              მაღალი პროფესიული სტანდარტი თითოეულ საქმეში.
+            </p>
+          </article>
+
+          <article class="value-block reveal">
+            <span> 02 </span>
+
+            <h3 data-ka="პასუხისმგებლობა" data-en="Responsibility">
+              პასუხისმგებლობა
+            </h3>
+
+            <p
+              data-ka="ყურადღებიანი და პასუხისმგებლიანი მიდგომა კლიენტის ინტერესების მიმართ."
+              data-en="A careful and responsible approach to every client's interests."
+            >
+              ყურადღებიანი და პასუხისმგებლიანი მიდგომა კლიენტის ინტერესების
+              მიმართ.
+            </p>
+          </article>
+
+          <article class="value-block reveal">
+            <span> 03 </span>
+
+            <h3 data-ka="სანდოობა" data-en="Trust">სანდოობა</h3>
+
+            <p
+              data-ka="ურთიერთობა, რომელიც ეფუძნება ნდობასა და მკაფიო კომუნიკაციას."
+              data-en="Relationships built on trust and clear communication."
+            >
+              ურთიერთობა, რომელიც ეფუძნება ნდობასა და მკაფიო კომუნიკაციას.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- CONTACT CTA -->
+      <section class="cta-section">
+        <div class="container cta-inner reveal">
+          <div>
+            <p class="section-kicker light">GRADA LAW FIRM</p>
+
+            <h2
+              data-ka="გჭირდებათ იურიდიული მხარდაჭერა?"
+              data-en="Need legal support?"
+            >
+              გჭირდებათ იურიდიული მხარდაჭერა?
+            </h2>
+          </div>
+
+          <a
+            class="btn btn-light"
+            href="contact.html"
+            data-ka="დაგვიკავშირდით"
+            data-en="Contact us"
+          >
+            დაგვიკავშირდით
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- BRAND TEXT -->
+        <div class="footer-brand">
+          <p
+            data-ka="პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და ინტერესების დასაცავად."
+            data-en="Professional legal support for the protection of your rights and interests."
+          >
+            პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და
+            ინტერესების დასაცავად.
+          </p>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div>
+          <h3 data-ka="ნავიგაცია" data-en="Navigation">ნავიგაცია</h3>
+
+          <a href="index.html" data-ka="მთავარი" data-en="Home"> მთავარი </a>
+
+          <a href="about.html" data-ka="ჩვენ შესახებ" data-en="About Us">
+            ჩვენ შესახებ
+          </a>
+
+          <a href="services.html" data-ka="სერვისები" data-en="Services">
+            სერვისები
+          </a>
+
+          <a href="team.html" data-ka="გუნდი" data-en="Team"> გუნდი </a>
+
+          <a href="contact.html" data-ka="კონტაქტი" data-en="Contact">
+            კონტაქტი
+          </a>
+        </div>
+
+        <!-- CONTACT -->
+        <div class="footer-contact">
+          <h3 data-ka="კონტაქტი" data-en="Contact">კონტაქტი</h3>
+
+          <p>
+            <a href="tel:+995514549955"> +995 514 54 99 55 </a>
+          </p>
+
+          <p>
+            <a href="tel:+995574401023"> +995 574 40 10 23 </a>
+          </p>
+
+          <p>
+            <a href="mailto:grada.lawfirm@gmail.com">
+              grada.lawfirm@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> GRADA Law Firm</p>
+
+        <p data-ka="ყველა უფლება დაცულია." data-en="All rights reserved.">
+          ყველა უფლება დაცულია.
+        </p>
+      </div>
+    </footer>
+
+    <!-- JAVASCRIPT -->
+    <script src="js/main.js"></script>
+  </body>
+</html>

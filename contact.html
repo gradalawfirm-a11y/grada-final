@@ -1,0 +1,635 @@
+<!doctype html>
+<html lang="ka">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta
+      name="description"
+      data-ka="დაუკავშირდით GRADA Law Firm-ს იურიდიული კონსულტაციისა და სამართლებრივი მომსახურების მისაღებად."
+      data-en="Contact GRADA Law Firm for legal consultation and professional legal services."
+      content="დაუკავშირდით GRADA Law Firm-ს იურიდიული კონსულტაციისა და სამართლებრივი მომსახურების მისაღებად."
+    />
+
+    <meta name="theme-color" content="#071842" />
+
+    <title
+      data-ka="კონტაქტი | GRADA Law Firm"
+      data-en="Contact | GRADA Law Firm"
+    >
+      კონტაქტი | GRADA Law Firm
+    </title>
+
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="CSS/styles.css" />
+
+    <!-- =====================================================
+         CUSTOM CONTACT FORM STYLES
+         მხოლოდ Contact გვერდის ფორმისთვის
+    ====================================================== -->
+
+    <style>
+      .contact-page .grada-form-card {
+        width: 100%;
+        padding: 48px;
+
+        background: #ffffff;
+
+        border: 1px solid rgba(7, 24, 66, 0.14);
+        border-top: 5px solid #071842;
+
+        box-sizing: border-box;
+      }
+
+      .contact-page .grada-consultation-form {
+        display: grid;
+        gap: 32px;
+      }
+
+      .contact-page .grada-form-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        gap: 26px;
+      }
+
+      .contact-page .grada-form-group {
+        display: grid;
+        gap: 12px;
+      }
+
+      /* LABEL */
+
+      .contact-page .grada-form-group label {
+        font-family: "Noto Serif Georgian", serif;
+
+        font-size: 14px;
+        font-weight: 500;
+
+        line-height: 1.6;
+
+        color: #071842;
+      }
+
+      /* INPUT + TEXTAREA */
+
+      .contact-page .grada-form-group input,
+      .contact-page .grada-form-group textarea {
+        width: 100%;
+
+        padding: 16px 0;
+
+        border: 0;
+        border-bottom: 1px solid rgba(7, 24, 66, 0.25);
+
+        border-radius: 0;
+
+        outline: none;
+
+        background: transparent;
+
+        box-sizing: border-box;
+
+        font-family: "Noto Serif Georgian", serif;
+
+        font-size: 15px;
+        font-weight: 300;
+
+        line-height: 1.6;
+
+        color: #071842;
+
+        transition:
+          border-color 180ms ease,
+          box-shadow 180ms ease;
+      }
+
+      .contact-page .grada-form-group textarea {
+        min-height: 150px;
+
+        resize: vertical;
+      }
+
+      /* PLACEHOLDER */
+
+      .contact-page .grada-form-group input::placeholder,
+      .contact-page .grada-form-group textarea::placeholder {
+        color: rgba(7, 24, 66, 0.38);
+      }
+
+      /* FOCUS */
+
+      .contact-page .grada-form-group input:focus,
+      .contact-page .grada-form-group textarea:focus {
+        border-bottom-color: #071842;
+
+        box-shadow: 0 1px 0 #071842;
+      }
+
+      /* SUBMIT BUTTON */
+
+      .contact-page .grada-form-submit {
+        justify-self: start;
+
+        min-width: 170px;
+        min-height: 56px;
+
+        padding: 0 32px;
+
+        border: 1px solid #071842;
+
+        background: #071842;
+
+        cursor: pointer;
+
+        font-family: "Noto Sans Georgian", sans-serif;
+
+        font-size: 13px;
+        font-weight: 700;
+
+        letter-spacing: 0.04em;
+
+        color: #ffffff;
+
+        transition:
+          background 180ms ease,
+          color 180ms ease;
+      }
+
+      .contact-page .grada-form-submit:hover {
+        background: #ffffff;
+
+        color: #071842;
+      }
+
+      /* STATUS MESSAGE */
+
+      .contact-page .grada-form-status {
+        min-height: 20px;
+
+        margin: -10px 0 0;
+
+        font-family: "Noto Serif Georgian", serif;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+
+        color: rgba(7, 24, 66, 0.65);
+      }
+
+      /* REQUIRED STAR */
+
+      .contact-page .required-star {
+        margin-left: 3px;
+
+        color: #9d2b2b;
+      }
+
+      /* MOBILE */
+
+      @media (max-width: 768px) {
+        .contact-page .grada-form-card {
+          padding: 32px 22px;
+        }
+
+        .contact-page .grada-form-row {
+          grid-template-columns: 1fr;
+
+          gap: 30px;
+        }
+
+        .contact-page .grada-form-submit {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body class="contact-page">
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header" id="siteHeader">
+      <div class="container header-inner">
+        <!-- LOGO -->
+
+        <a
+          class="brand"
+          href="index.html"
+          aria-label="GRADA მთავარი გვერდი"
+          data-aria-ka="GRADA მთავარი გვერდი"
+          data-aria-en="GRADA Home"
+        >
+          <img src="assets/logo.jpeg" alt="GRADA Law Firm" />
+        </a>
+
+        <!-- MOBILE MENU -->
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="მენიუს გახსნა"
+          data-aria-ka="მენიუს გახსნა"
+          data-aria-en="Open menu"
+          aria-expanded="false"
+          aria-controls="mainNav"
+        >
+          <span></span>
+          <span></span>
+        </button>
+
+        <!-- NAVIGATION -->
+
+        <nav class="main-nav" id="mainNav" aria-label="მთავარი ნავიგაცია">
+          <a href="index.html" data-ka="მთავარი" data-en="Home"> მთავარი </a>
+
+          <a href="about.html" data-ka="ჩვენ შესახებ" data-en="About Us">
+            ჩვენ შესახებ
+          </a>
+
+          <a href="services.html" data-ka="სერვისები" data-en="Services">
+            სერვისები
+          </a>
+
+          <a href="team.html" data-ka="გუნდი" data-en="Team"> გუნდი </a>
+
+          <a
+            href="contact.html"
+            class="active"
+            data-ka="კონტაქტი"
+            data-en="Contact"
+          >
+            კონტაქტი
+          </a>
+        </nav>
+
+        <!-- LANGUAGE SWITCH -->
+
+        <div class="language-switch" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="ka" type="button">
+            KA
+          </button>
+
+          <span>/</span>
+
+          <button class="lang-btn" data-lang="en" type="button">EN</button>
+        </div>
+      </div>
+    </header>
+
+    <!-- =====================================================
+         MAIN
+    ====================================================== -->
+
+    <main>
+      <!-- ===================================================
+           CONTACT HERO
+      ==================================================== -->
+
+      <section class="contact-image-hero">
+        <div class="contact-image-overlay"></div>
+
+        <div class="contact-image-title">
+          <h1 data-ka="დაგვიკავშირდით" data-en="CONTACT US">დაგვიკავშირდით</h1>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           CONTACT INTRO
+      ==================================================== -->
+
+      <section class="contact-intro-section">
+        <!-- დიდი მკრთალი GRADA -->
+
+        <div class="contact-watermark" aria-hidden="true">GRADA</div>
+
+        <div class="container contact-intro-content">
+          <p class="contact-small-label">GRADA LAW FIRM</p>
+
+          <h2
+            data-ka="თქვენ არ უნდა ებრძოლოთ სამართლებრივ სირთულეებს მარტო დაგვიკავშირდით"
+            data-en="The right legal solution starts with a conversation"
+          >
+            თქვენ არ უნდა ებრძოლოთ სამართლებრივ სირთულეებს მარტო -
+            დაგვიკავშირდით
+          </h2>
+
+          <p
+            class="contact-intro-text"
+            data-ka="GRADA თქვენი უფლებებისთვის - თქვენი ინტერესებისთვის."
+            data-en="Contact us and briefly tell us about your legal matter. GRADA's team will review your inquiry and contact you to discuss the appropriate next steps."
+          >
+            დაგვიკავშირდით და მოკლედ გაგვიზიარეთ თქვენი სამართლებრივი საკითხი.
+            GRADA-ს გუნდი გაეცნობა თქვენს მოთხოვნას და დაგიკავშირდებათ
+            შესაბამისი ნაბიჯების განსასაზღვრად.
+          </p>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           CONSULTATION FORM
+      ==================================================== -->
+
+      <section class="contact-form-section" id="consultation">
+        <div class="container contact-form-grid">
+          <!-- LEFT SIDE -->
+
+          <div class="contact-form-heading">
+            <h2
+              class="consultation-title"
+              data-ka="დაგვიტოვეთ თქვენი საკონტაქტო ინფორმაცია და მოკლედ აღწერეთ საკითხი, რომელზეც სამართლებრივი მხარდაჭერა გჭირდებათ. ჩვენი გუნდი უმოკლეს დროში დაგიკავშირდებათ."
+              data-en="Leave your contact details and briefly describe the matter for which you need legal assistance. Our team will contact you shortly."
+            >
+              კონსულტაციის მისაღებად დაგვიტოვეთ თქვენი საკონტაქტო ინფორმაცია და
+              მოკლედ აღწერეთ საკითხი, რომელზეც სამართლებრივი მხარდაჭერა
+              გჭირდებათ. ჩვენი გუნდი უმოკლეს დროში დაგიკავშირდებათ.
+            </h2>
+
+            <p class="privacy-note"></p>
+          </div>
+
+          <!-- =================================================
+               RIGHT SIDE — GRADA CUSTOM FORM
+          ================================================== -->
+
+          <div class="grada-form-card">
+            <form class="grada-consultation-form" id="gradaConsultationForm">
+              <!-- FULL NAME -->
+
+              <div class="grada-form-group">
+                <label
+                  for="fullName"
+                  data-ka="სახელი, გვარი"
+                  data-en="Full name"
+                >
+                  სახელი, გვარი
+                  <span class="required-star">*</span>
+                </label>
+
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  autocomplete="name"
+                  placeholder="მიუთითეთ სახელი და გვარი"
+                  data-placeholder-ka="მიუთითეთ სახელი და გვარი"
+                  data-placeholder-en="Enter your full name"
+                  required
+                />
+              </div>
+
+              <!-- PHONE + EMAIL -->
+
+              <div class="grada-form-row">
+                <!-- PHONE -->
+
+                <div class="grada-form-group">
+                  <label
+                    for="phone"
+                    data-ka="მობილურის ნომერი"
+                    data-en="Phone number"
+                  >
+                    მობილურის ნომერი
+                    <span class="required-star">*</span>
+                  </label>
+
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    autocomplete="tel"
+                    placeholder="+995"
+                    data-placeholder-ka="+995"
+                    data-placeholder-en="+995"
+                    required
+                  />
+                </div>
+
+                <!-- EMAIL -->
+
+                <div class="grada-form-group">
+                  <label for="email" data-ka="ელ. ფოსტა" data-en="Email">
+                    ელ. ფოსტა
+                    <span class="required-star">*</span>
+                  </label>
+
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    autocomplete="email"
+                    placeholder="example@email.com"
+                    data-placeholder-ka="example@email.com"
+                    data-placeholder-en="example@email.com"
+                    required
+                  />
+                </div>
+              </div>
+
+              <!-- LEGAL MATTER -->
+
+              <div class="grada-form-group">
+                <label
+                  for="matter"
+                  data-ka="საკითხი, რომელზეც გსურთ კონსულტაციის მიღება"
+                  data-en="Matter for which you would like to receive consultation"
+                >
+                  საკითხი, რომელზეც გსურთ კონსულტაციის მიღება
+                  <span class="required-star">*</span>
+                </label>
+
+                <textarea
+                  id="matter"
+                  name="matter"
+                  rows="6"
+                  placeholder="მოკლედ აღწერეთ საკითხი"
+                  data-placeholder-ka="მოკლედ აღწერეთ საკითხი"
+                  data-placeholder-en="Briefly describe your legal matter"
+                  required
+                ></textarea>
+              </div>
+
+              <!-- SUBMIT -->
+
+              <button
+                type="submit"
+                class="grada-form-submit"
+                data-ka="გაგზავნა"
+                data-en="Submit"
+              >
+                გაგზავნა
+              </button>
+
+              <!-- STATUS -->
+
+              <p
+                class="grada-form-status"
+                id="gradaFormStatus"
+                aria-live="polite"
+              ></p>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================
+           DIRECT CONTACT CTA
+      ==================================================== -->
+
+      <section class="contact-direct-section">
+        <div class="container contact-direct-inner">
+          <div>
+            <p class="section-kicker light">GRADA LAW FIRM</p>
+
+            <h2
+              data-ka="სამართლებრივი საკითხების სწრაფად და მარტივად გადასაწყვეტად დაგვიკავშირდით"
+              data-en="Contact us for fast and straightforward solutions to your legal matters"
+            >
+              სამართლებრივი საკითხების სწრაფად და მარტივად გადაწყვეტად
+              დაგვიკავშირდით
+            </h2>
+          </div>
+
+          <a
+            class="contact-whatsapp-button"
+            href="https://wa.me/995514549955"
+            target="_blank"
+            rel="noopener noreferrer"
+            data-ka="WhatsApp-ზე მოგვწერეთ"
+            data-en="Message us on WhatsApp"
+          >
+            WhatsApp-ზე მოგვწერეთ
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- =====================================================
+         FOOTER
+    ====================================================== -->
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <!-- FOOTER BRAND -->
+
+        <div class="footer-brand">
+          <p
+            data-ka="პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და ინტერესების დასაცავად."
+            data-en="Professional legal support for the protection of your rights and interests."
+          >
+            პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და
+            ინტერესების დასაცავად.
+          </p>
+        </div>
+
+        <!-- NAVIGATION -->
+
+        <div>
+          <h3 data-ka="ნავიგაცია" data-en="Navigation">ნავიგაცია</h3>
+
+          <a href="index.html" data-ka="მთავარი" data-en="Home"> მთავარი </a>
+
+          <a href="about.html" data-ka="ჩვენ შესახებ" data-en="About Us">
+            ჩვენ შესახებ
+          </a>
+
+          <a href="services.html" data-ka="სერვისები" data-en="Services">
+            სერვისები
+          </a>
+
+          <a href="team.html" data-ka="გუნდი" data-en="Team"> გუნდი </a>
+
+          <a href="contact.html" data-ka="კონტაქტი" data-en="Contact">
+            კონტაქტი
+          </a>
+        </div>
+
+        <!-- CONTACT -->
+
+        <div>
+          <h3 data-ka="კონტაქტი" data-en="Contact">კონტაქტი</h3>
+
+          <p>
+            <a href="tel:+995514549955"> +995 514 54 99 55 </a>
+          </p>
+
+          <p>
+            <a href="tel:+995574401023"> +995 574 40 10 23 </a>
+          </p>
+
+          <p>
+            <a href="mailto:grada.lawfirm@gmail.com">
+              grada.lawfirm@gmail.com
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- COPYRIGHT -->
+
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> GRADA Law Firm</p>
+
+        <p data-ka="ყველა უფლება დაცულია." data-en="All rights reserved.">
+          ყველა უფლება დაცულია.
+        </p>
+      </div>
+    </footer>
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="js/main.js"></script>
+
+    <!-- =====================================================
+         TEMPORARY FORM SCRIPT
+
+         ახლა ფორმა ვიზუალურად მუშაობს.
+         Google Forms-ზე რეალური გაგზავნა შემდეგ ეტაპზე
+         უნდა მივაბათ.
+    ====================================================== -->
+
+    <script>
+      const gradaForm = document.getElementById("gradaConsultationForm");
+
+      const gradaFormStatus = document.getElementById("gradaFormStatus");
+
+      if (gradaForm) {
+        gradaForm.addEventListener("submit", function (event) {
+          event.preventDefault();
+
+          const currentLanguage = document.documentElement.lang;
+
+          if (currentLanguage === "en") {
+            gradaFormStatus.textContent =
+              "The form is ready. Online submission will be activated shortly.";
+          } else {
+            gradaFormStatus.textContent =
+              "ფორმა მზადაა. ონლაინ გაგზავნის ფუნქცია შემდეგ ეტაპზე გააქტიურდება.";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
