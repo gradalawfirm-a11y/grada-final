@@ -132,6 +132,17 @@
           <a href="contact.html" data-ka="კონტაქტი" data-en="Contact">
             კონტაქტი
           </a>
+          <div class="mobile-language-switch">
+            <button class="mobile-lang-btn active" data-lang="ka" type="button">
+              KA
+            </button>
+
+            <span>/</span>
+
+            <button class="mobile-lang-btn" data-lang="en" type="button">
+              EN
+            </button>
+          </div>
         </nav>
 
         <!-- LANGUAGE SWITCH -->
@@ -147,238 +158,532 @@
       </div>
     </header>
 
-    <!-- MAIN CONTENT -->
     <main>
-      <!-- HERO SECTION -->
-      <section class="hero">
-        <div class="container hero-grid">
-          <div class="section-copy">
-            <p
-              class="eyebrow"
-              data-ka="GRADA საადვოკატო კომპანია"
-              data-en="GRADA LAW FIRM"
-            >
-              GRADA საადვოკატო კომპანია
-            </p>
+      <!-- =====================================================
+       HERO
+  ====================================================== -->
 
-            <h1
-              data-ka="სამართლებრივი მხარდაჭერა, რომელიც თქვენს ინტერესებს ემსახურება."
-              data-en="Legal support built around your interests."
-            >
-              სამართლებრივი მხარდაჭერა, რომელიც თქვენს ინტერესებს ემსახურება.
-            </h1>
+      <!-- =====================================================
+     GRADA — MAIN HERO
+====================================================== -->
 
-            <p
-              class="hero-lead"
-              data-ka="პროფესიონალიზმი, პასუხისმგებლობა და შედეგზე ორიენტირებული სამართლებრივი სტრატეგია თითოეული კლიენტისა და თითოეული საქმისთვის."
-              data-en="Professionalism, responsibility and a clear legal strategy — for every client and every matter."
-            >
-              პროფესიონალიზმი, პასუხისმგებლობა და მკაფიო სამართლებრივი სტრატეგია
-              — თითოეული კლიენტისა და თითოეული საქმისთვის.
-            </p>
+      <!-- =====================================================
+     HOME HERO — CALM / MINIMAL
+====================================================== -->
 
-            <div class="hero-actions">
-              <a
-                class="btn btn-primary"
-                href="services.html"
-                data-ka="იხილეთ სერვისები"
-                data-en="View services"
+      <!-- =====================================================
+     GRADA — HOME SLIDESHOW
+====================================================== -->
+
+      <section class="grada-slider" id="gradaSlider">
+        <!-- SLIDE 1 -->
+        <article class="grada-slide grada-slide-first active">
+          <img
+            src="assets/homepage.jpg"
+            alt="GRADA Law Firm"
+            class="grada-first-bg"
+          />
+
+          <div class="grada-first-overlay"></div>
+
+          <div class="container grada-first-inner">
+            <div class="grada-first-content">
+              <h1
+                data-ka="სამართლებრივი მხარდაჭერა, რომელსაც შეგიძლიათ დაეყრდნოთ."
+                data-en="Legal support you can rely on."
               >
-                იხილეთ სერვისები
+                სამართლებრივი მხარდაჭერა, რომელსაც შეგიძლიათ დაეყრდნოთ.
+              </h1>
+
+              <p
+                data-ka="პროფესიონალური იურიდიული მხარდაჭერა, სტრატეგიული მიდგომა და თქვენი ინტერესების დაცვა."
+                data-en="Professional legal support, a strategic approach, and protection of your interests."
+              >
+                პროფესიონალური იურიდიული მხარდაჭერა, სტრატეგიული მიდგომა და
+                თქვენი ინტერესების დაცვა.
+              </p>
+
+              <a href="contact.html#consultation" class="grada-first-button">
+                <span
+                  data-ka="კონსულტაციის დაჯავშნა"
+                  data-en="Book a consultation"
+                >
+                  კონსულტაციის დაჯავშნა
+                </span>
+
+                <span>→</span>
               </a>
+              <div class="grada-first-pagination">
+                <span class="active">01</span>
+                <i></i>
+                <span>02</span>
+                <span>03</span>
+                <span>04</span>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- SLIDE 2 -->
+        <!-- SLIDE 2 -->
+        <article class="grada-slide grada-slide-about">
+          <div class="grada-about-layout">
+            <!-- LEFT -->
+            <div class="grada-about-left">
+              <div class="grada-about-content">
+                <h2>
+                  გაიგეთ მეტი <span class="no-break">GRADA-ს</span> შესახებ
+                </h2>
+
+                <p
+                  data-ka="სამართლებრივი მხარდაჭერა, რომელიც ეფუძნება პასუხისმგებლობას, ნდობასა და სტრატეგიულ ხედვას."
+                  data-en="Legal support built on responsibility, trust, and strategic thinking."
+                >
+                  სამართლებრივი მხარდაჭერა, რომელიც ეფუძნება პასუხისმგებლობას,
+                  ნდობასა და სტრატეგიულ ხედვას.
+                </p>
+
+                <a
+                  href="about.html"
+                  class="grada-about-link"
+                  data-ka="ჩვენ შესახებ →"
+                  data-en="About us →"
+                >
+                  ჩვენ შესახებ →
+                </a>
+              </div>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="grada-about-right">
+              <img
+                src="assets/aboutgrada.png"
+                alt="GRADA Law Firm"
+                class="grada-about-image"
+              />
+            </div>
+          </div>
+        </article>
+
+        <!-- SLIDE 3 -->
+        <article class="grada-slide grada-slide-photo">
+          <img
+            src="assets/team.main(1).jpg"
+            alt="GRADA გუნდი"
+            class="grada-slide-bg"
+          />
+
+          <div class="grada-slide-overlay"></div>
+
+          <div class="container grada-slide-inner">
+            <div class="grada-slide-copy photo-copy">
+              <h2
+                data-ka="გუნდი, რომელიც თქვენს ინტერესებს იცავს"
+                data-en="A team that protects your interests"
+              >
+                გუნდი, რომელიც თქვენს ინტერესებს იცავს
+              </h2>
+
+              <p
+                data-ka="გამოცდილი იურისტები და ადვოკატები, ერთიანი ხედვითა და პასუხისმგებლობით."
+                data-en="Experienced lawyers and advocates united by a shared vision and responsibility."
+              >
+                გამოცდილი იურისტები და ადვოკატები, ერთიანი ხედვითა და
+                პასუხისმგებლობით.
+              </p>
 
               <a
-                class="btn btn-ghost"
-                href="contact.html"
-                data-ka="დაგვიკავშირდით"
-                data-en="Contact us"
+                href="team.html"
+                class="grada-slide-link"
+                data-ka="გაიცანით გუნდი →"
+                data-en="Meet our team →"
               >
-                დაგვიკავშირდით
+                გაიცანით გუნდი →
               </a>
             </div>
           </div>
+        </article>
 
-          <!-- DECORATIVE HERO ELEMENT -->
-          <div class="hero-panel reveal" aria-hidden="true">
-            <div class="hero-symbol">G</div>
+        <!-- SLIDE 4 -->
+        <!-- =====================================================
+     SLIDE 4 — SERVICES / CONSULTATION
+====================================================== -->
 
-            <div class="hero-panel-line"></div>
+        <article class="grada-slide grada-slide-final">
+          <!-- RIGHT SIDE NETWORK DECORATION -->
+          <div class="grada-final-network" aria-hidden="true">
+            <svg
+              viewBox="0 0 600 800"
+              xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="xMidYMid slice"
+            >
+              <!-- CONNECTION LINES -->
 
-            <span> LAW FIRM </span>
+              <g class="network-lines">
+                <line x1="330" y1="80" x2="430" y2="145" />
+                <line x1="430" y1="145" x2="520" y2="100" />
+                <line x1="430" y1="145" x2="470" y2="245" />
+                <line x1="330" y1="80" x2="290" y2="190" />
+                <line x1="290" y1="190" x2="430" y2="145" />
+                <line x1="290" y1="190" x2="350" y2="310" />
+                <line x1="350" y1="310" x2="470" y2="245" />
+                <line x1="470" y1="245" x2="550" y2="340" />
+                <line x1="350" y1="310" x2="420" y2="420" />
+                <line x1="420" y1="420" x2="550" y2="340" />
+                <line x1="420" y1="420" x2="500" y2="520" />
+                <line x1="420" y1="420" x2="310" y2="500" />
+                <line x1="310" y1="500" x2="500" y2="520" />
+                <line x1="310" y1="500" x2="350" y2="640" />
+                <line x1="350" y1="640" x2="500" y2="520" />
+                <line x1="350" y1="640" x2="470" y2="720" />
+                <line x1="500" y1="520" x2="560" y2="650" />
+                <line x1="470" y1="720" x2="560" y2="650" />
+              </g>
+
+              <!-- DOTS -->
+
+              <g class="network-dots">
+                <circle cx="330" cy="80" r="4" />
+                <circle cx="430" cy="145" r="5" />
+                <circle cx="520" cy="100" r="3" />
+                <circle cx="290" cy="190" r="4" />
+                <circle cx="470" cy="245" r="4" />
+                <circle cx="350" cy="310" r="5" />
+                <circle cx="550" cy="340" r="4" />
+                <circle cx="420" cy="420" r="5" />
+                <circle cx="310" cy="500" r="4" />
+                <circle cx="500" cy="520" r="5" />
+                <circle cx="350" cy="640" r="4" />
+                <circle cx="560" cy="650" r="3" />
+                <circle cx="470" cy="720" r="5" />
+              </g>
+            </svg>
           </div>
-        </div>
+
+          <!-- CONTENT -->
+          <div class="container grada-slide-inner">
+            <div class="grada-slide-copy centered">
+              <h2
+                data-ka="გაეცანით ჩვენს სერვისებს და დაგეგმეთ კონსულტაცია."
+                data-en="Explore our services and schedule a consultation."
+              >
+                გაეცანით ჩვენს სერვისებს და დაგეგმეთ კონსულტაცია.
+              </h2>
+
+              <p
+                data-ka="აირჩიეთ თქვენთვის შესაბამისი სამართლებრივი მიმართულება ან მოგვწერეთ თქვენი საკითხის შესახებ."
+                data-en="Choose the legal service that meets your needs or contact us about your matter."
+              >
+                აირჩიეთ თქვენთვის შესაბამისი სამართლებრივი მიმართულება ან
+                მოგვწერეთ თქვენი საკითხის შესახებ.
+              </p>
+
+              <div class="grada-slide-actions">
+                <a href="services.html" class="grada-slide-button">
+                  <span data-ka="ჩვენი სერვისები" data-en="Our services">
+                    ჩვენი სერვისები
+                  </span>
+                </a>
+
+                <a
+                  href="contact.html#consultation"
+                  class="grada-slide-link dark"
+                  data-ka="კონსულტაციის დაჯავშნა →"
+                  data-en="Book a consultation →"
+                >
+                  კონსულტაციის დაჯავშნა →
+                </a>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <!-- ARROWS -->
+        <button
+          class="grada-slider-arrow grada-prev"
+          type="button"
+          aria-label="წინა სლაიდი"
+        >
+          ←
+        </button>
+
+        <button
+          class="grada-slider-arrow grada-next"
+          type="button"
+          aria-label="შემდეგი სლაიდი"
+        >
+          →
+        </button>
       </section>
 
-      <!-- SERVICES -->
-      <section class="section section-white">
+      <!-- =====================================================
+       VALUES
+  ====================================================== -->
+
+      <!-- =====================================================
+     HOME FAQ / ACCORDION
+====================================================== -->
+
+      <section class="home-faq-section">
         <div class="container">
-          <div class="section-heading reveal">
-            <p class="section-kicker" data-ka="სერვისები" data-en="SERVICES">
-              სერვისები
-            </p>
-
+          <div class="home-faq-heading">
             <h2
-              data-ka="ძირითადი სამართლებრივი მიმართულებები"
-              data-en="Core legal services"
+              data-ka="ხშირად დასმული კითხვები"
+              data-en="Frequently Asked Questions"
             >
-              ძირითადი სამართლებრივი მიმართულებები
+              ხშირად დასმული კითხვები
             </h2>
           </div>
 
-          <div class="cards-grid">
-            <!-- CIVIL LAW -->
-            <a class="service-card reveal" href="services.html#civil">
-              <span class="card-number"> 01 </span>
-
-              <h3 data-ka="სამოქალაქო სამართალი" data-en="Civil Law">
-                სამოქალაქო სამართალი
-              </h3>
-
-              <p
-                data-ka="კონსულტაცია, დოკუმენტაციის მომზადება და წარმომადგენლობა სამოქალაქო სამართლებრივ საკითხებში."
-                data-en="Advice, documentation and representation in civil law matters."
+          <div class="home-faq">
+            <!-- QUESTION 01 -->
+            <article class="home-faq-item">
+              <button
+                class="home-faq-question"
+                type="button"
+                aria-expanded="false"
               >
-                კონსულტაცია, დოკუმენტაციის მომზადება და წარმომადგენლობა
-                სამოქალაქო სამართლებრივ საკითხებში.
-              </p>
+                <span
+                  class="home-faq-title"
+                  data-ka="როგორ ვმუშაობთ თქვენს საქმეზე?"
+                  data-en="How do we work on your case?"
+                >
+                  როგორ ვმუშაობთ თქვენს საქმეზე?
+                </span>
 
-              <span class="card-arrow"> ↗ </span>
-            </a>
+                <span class="home-faq-icon" aria-hidden="true">+</span>
+              </button>
 
-            <!-- ADMINISTRATIVE LAW -->
-            <a class="service-card reveal" href="services.html#administrative">
-              <span class="card-number"> 02 </span>
+              <div class="home-faq-answer">
+                <div class="home-faq-answer-inner">
+                  <p
+                    data-ka="პირველ ეტაპზე ვეცნობით საქმის გარემოებებს, ვაფასებთ სამართლებრივ მდგომარეობას და შესაძლო რისკებს. ამის შემდეგ ვადგენთ თქვენი ინტერესებისა და კონკრეტული გარემოებების შესაბამის სამართლებრივ სტრატეგიას."
+                    data-en="At the initial stage, we review the circumstances of your case, assess the legal position and potential risks, and then develop a legal strategy tailored to your interests and specific circumstances."
+                  >
+                    პირველ ეტაპზე ვეცნობით საქმის გარემოებებს, ვაფასებთ
+                    სამართლებრივ მდგომარეობას და შესაძლო რისკებს. ამის შემდეგ
+                    ვადგენთ თქვენი ინტერესებისა და კონკრეტული გარემოებების
+                    შესაბამის სამართლებრივ სტრატეგიას.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-              <h3
-                data-ka="ადმინისტრაციული სამართალი"
-                data-en="Administrative Law"
+            <!-- QUESTION 02 -->
+            <article class="home-faq-item">
+              <button
+                class="home-faq-question"
+                type="button"
+                aria-expanded="false"
               >
-                ადმინისტრაციული სამართალი
-              </h3>
+                <span
+                  class="home-faq-title"
+                  data-ka="რას მოიცავს პირველადი კონსულტაცია?"
+                  data-en="What does the initial consultation include?"
+                >
+                  რას მოიცავს პირველადი კონსულტაცია?
+                </span>
 
-              <p
-                data-ka="სამართლებრივი მხარდაჭერა ადმინისტრაციულ ორგანოებთან ურთიერთობისა და ადმინისტრაციული დავებისას."
-                data-en="Legal support in dealings with administrative authorities and administrative disputes."
+                <span class="home-faq-icon" aria-hidden="true">+</span>
+              </button>
+
+              <div class="home-faq-answer">
+                <div class="home-faq-answer-inner">
+                  <p
+                    data-ka="პირველადი კონსულტაციის ფარგლებში ვეცნობით თქვენს საკითხს, განვიხილავთ მის სამართლებრივ ასპექტებს, შესაძლო რისკებსა და შემდგომი მოქმედების ვარიანტებს."
+                    data-en="During the initial consultation, we review your matter, discuss its legal aspects and potential risks, and outline possible courses of action."
+                  >
+                    პირველადი კონსულტაციის ფარგლებში ვეცნობით თქვენს საკითხს,
+                    განვიხილავთ მის სამართლებრივ ასპექტებს, შესაძლო რისკებსა და
+                    შემდგომი მოქმედების ვარიანტებს.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <!-- QUESTION 03 -->
+            <article class="home-faq-item">
+              <button
+                class="home-faq-question"
+                type="button"
+                aria-expanded="false"
               >
-                სამართლებრივი მხარდაჭერა ადმინისტრაციულ ორგანოებთან ურთიერთობისა
-                და ადმინისტრაციული დავებისას.
-              </p>
+                <span
+                  class="home-faq-title"
+                  data-ka="როგორ განისაზღვრება სამართლებრივი სტრატეგია?"
+                  data-en="How is the legal strategy determined?"
+                >
+                  როგორ განისაზღვრება სამართლებრივი სტრატეგია?
+                </span>
 
-              <span class="card-arrow"> ↗ </span>
-            </a>
+                <span class="home-faq-icon" aria-hidden="true">+</span>
+              </button>
 
-            <!-- CRIMINAL LAW -->
-            <a class="service-card reveal" href="services.html#criminal">
-              <span class="card-number"> 03 </span>
+              <div class="home-faq-answer">
+                <div class="home-faq-answer-inner">
+                  <p
+                    data-ka="სამართლებრივი სტრატეგია განისაზღვრება თითოეული საქმის ინდივიდუალური გარემოებების, არსებული მტკიცებულებების, სამართლებრივი რისკებისა და კლიენტის ინტერესების გათვალისწინებით."
+                    data-en="The legal strategy is determined by considering the individual circumstances of each matter, available evidence, legal risks and the client's interests."
+                  >
+                    სამართლებრივი სტრატეგია განისაზღვრება თითოეული საქმის
+                    ინდივიდუალური გარემოებების, არსებული მტკიცებულებების,
+                    სამართლებრივი რისკებისა და კლიენტის ინტერესების
+                    გათვალისწინებით.
+                  </p>
+                </div>
+              </div>
+            </article>
 
-              <h3 data-ka="სისხლის სამართალი" data-en="Criminal Law">
-                სისხლის სამართალი
-              </h3>
-
-              <p
-                data-ka="პროფესიონალური დაცვა და წარმომადგენლობა სისხლის სამართლის საქმის წარმოების სხვადასხვა ეტაპზე."
-                data-en="Professional defence and representation throughout different stages of criminal proceedings."
+            <!-- QUESTION 04 -->
+            <article class="home-faq-item">
+              <button
+                class="home-faq-question"
+                type="button"
+                aria-expanded="false"
               >
-                პროფესიონალური დაცვა და წარმომადგენლობა სისხლის სამართლის საქმის
-                წარმოების სხვადასხვა ეტაპზე.
-              </p>
+                <span
+                  class="home-faq-title"
+                  data-ka="როგორ ხდება GRADA-სთან თანამშრომლობა?"
+                  data-en="How does cooperation with GRADA work?"
+                >
+                  როგორ ხდება GRADA-სთან თანამშრომლობა?
+                </span>
 
-              <span class="card-arrow"> ↗ </span>
-            </a>
+                <span class="home-faq-icon" aria-hidden="true">+</span>
+              </button>
+
+              <div class="home-faq-answer">
+                <div class="home-faq-answer-inner">
+                  <p
+                    data-ka="კონსულტაციის შემდეგ, საჭიროების შემთხვევაში, განისაზღვრება მომსახურების მოცულობა, თანამშრომლობის პირობები და შემდგომი სამართლებრივი მოქმედებები. პროცესის განმავლობაში კლიენტთან ვინარჩუნებთ მკაფიო და თანმიმდევრულ კომუნიკაციას."
+                    data-en="Following the consultation, where appropriate, we define the scope of services, terms of cooperation and subsequent legal actions. Throughout the process, we maintain clear and consistent communication with the client."
+                  >
+                    კონსულტაციის შემდეგ, საჭიროების შემთხვევაში, განისაზღვრება
+                    მომსახურების მოცულობა, თანამშრომლობის პირობები და შემდგომი
+                    სამართლებრივი მოქმედებები. პროცესის განმავლობაში კლიენტთან
+                    ვინარჩუნებთ მკაფიო და თანმიმდევრულ კომუნიკაციას.
+                  </p>
+                </div>
+              </div>
+            </article>
           </div>
         </div>
       </section>
 
-      <!-- VALUES -->
-      <section class="section values-section">
-        <div class="container values-grid">
-          <article class="value-block reveal">
-            <span> 01 </span>
+      <!-- =====================================================
+     TEAM PREVIEW — NO PHOTOS
+====================================================== -->
 
-            <h3 data-ka="პროფესიონალიზმი" data-en="Professionalism">
-              პროფესიონალიზმი
-            </h3>
-
-            <p
-              data-ka="მაღალი პროფესიული სტანდარტი თითოეულ საქმეში."
-              data-en="A high professional standard in every matter."
-            >
-              მაღალი პროფესიული სტანდარტი თითოეულ საქმეში.
-            </p>
-          </article>
-
-          <article class="value-block reveal">
-            <span> 02 </span>
-
-            <h3 data-ka="პასუხისმგებლობა" data-en="Responsibility">
-              პასუხისმგებლობა
-            </h3>
-
-            <p
-              data-ka="ყურადღებიანი და პასუხისმგებლიანი მიდგომა კლიენტის ინტერესების მიმართ."
-              data-en="A careful and responsible approach to every client's interests."
-            >
-              ყურადღებიანი და პასუხისმგებლიანი მიდგომა კლიენტის ინტერესების
-              მიმართ.
-            </p>
-          </article>
-
-          <article class="value-block reveal">
-            <span> 03 </span>
-
-            <h3 data-ka="სანდოობა" data-en="Trust">სანდოობა</h3>
-
-            <p
-              data-ka="ურთიერთობა, რომელიც ეფუძნება ნდობასა და მკაფიო კომუნიკაციას."
-              data-en="Relationships built on trust and clear communication."
-            >
-              ურთიერთობა, რომელიც ეფუძნება ნდობასა და მკაფიო კომუნიკაციას.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- CONTACT CTA -->
-      <section class="cta-section">
-        <div class="container cta-inner reveal">
-          <div>
-            <p class="section-kicker light">GRADA LAW FIRM</p>
-
-            <h2
-              data-ka="გჭირდებათ იურიდიული მხარდაჭერა?"
-              data-en="Need legal support?"
-            >
-              გჭირდებათ იურიდიული მხარდაჭერა?
-            </h2>
-          </div>
-
-          <a
-            class="btn btn-light"
-            href="contact.html"
-            data-ka="დაგვიკავშირდით"
-            data-en="Contact us"
-          >
-            დაგვიკავშირდით
-          </a>
-        </div>
-      </section>
+      <!-- =====================================================
+       CONSULTATION CTA
+  ====================================================== -->
     </main>
 
-    <footer class="site-footer">
+    <!-- =====================================================
+     GRADA FOOTER
+====================================================== -->
+
+    <footer class="site-footer grada-footer">
+      <!-- დეკორატიული network globe -->
+      <div class="footer-globe" aria-hidden="true">
+        <svg viewBox="0 0 520 520">
+          <!-- მთავარი სფერო -->
+          <circle class="globe-outline" cx="260" cy="260" r="235" />
+
+          <!-- სფეროს ხაზები -->
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="78" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="145" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="205" />
+
+          <ellipse class="globe-grid" cx="260" cy="260" rx="75" ry="235" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="145" ry="235" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="205" ry="235" />
+
+          <!-- NETWORK LINES -->
+          <g class="network-lines">
+            <path
+              d="M72 126 L122 92 L178 132 L230 87 L291 130 L351 93 L410 137 L454 112"
+            />
+            <path
+              d="M72 126 L100 194 L161 170 L216 220 L282 184 L344 230 L410 197 L454 245"
+            />
+            <path
+              d="M100 194 L125 274 L192 243 L249 292 L315 260 L382 302 L454 245"
+            />
+            <path d="M125 274 L153 353 L220 322 L275 370 L341 332 L411 375" />
+            <path d="M153 353 L199 431 L260 391 L324 436 L411 375" />
+
+            <path d="M122 92 L161 170 L230 87" />
+            <path d="M178 132 L216 220 L291 130" />
+            <path d="M291 130 L344 230 L410 137" />
+
+            <path d="M161 170 L192 243 L216 220" />
+            <path d="M216 220 L249 292 L282 184" />
+            <path d="M282 184 L315 260 L344 230" />
+            <path d="M344 230 L382 302 L410 197" />
+
+            <path d="M192 243 L220 322 L249 292" />
+            <path d="M249 292 L275 370 L315 260" />
+            <path d="M315 260 L341 332 L382 302" />
+
+            <path d="M220 322 L199 431 L275 370" />
+            <path d="M275 370 L260 391 L324 436" />
+            <path d="M341 332 L324 436 L411 375" />
+          </g>
+
+          <!-- NETWORK DOTS -->
+          <g class="network-dots">
+            <circle cx="72" cy="126" r="4" />
+            <circle cx="122" cy="92" r="3" />
+            <circle cx="178" cy="132" r="4" />
+            <circle cx="230" cy="87" r="3" />
+            <circle cx="291" cy="130" r="4" />
+            <circle cx="351" cy="93" r="3" />
+            <circle cx="410" cy="137" r="4" />
+            <circle cx="454" cy="112" r="3" />
+
+            <circle cx="100" cy="194" r="3" />
+            <circle cx="161" cy="170" r="5" />
+            <circle cx="216" cy="220" r="3" />
+            <circle cx="282" cy="184" r="4" />
+            <circle cx="344" cy="230" r="4" />
+            <circle cx="410" cy="197" r="3" />
+            <circle cx="454" cy="245" r="4" />
+
+            <circle cx="125" cy="274" r="4" />
+            <circle cx="192" cy="243" r="3" />
+            <circle cx="249" cy="292" r="5" />
+            <circle cx="315" cy="260" r="3" />
+            <circle cx="382" cy="302" r="4" />
+
+            <circle cx="153" cy="353" r="3" />
+            <circle cx="220" cy="322" r="4" />
+            <circle cx="275" cy="370" r="5" />
+            <circle cx="341" cy="332" r="3" />
+            <circle cx="411" cy="375" r="4" />
+
+            <circle cx="199" cy="431" r="4" />
+            <circle cx="260" cy="391" r="3" />
+            <circle cx="324" cy="436" r="4" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- MAIN FOOTER CONTENT -->
       <div class="container footer-grid">
-        <!-- BRAND TEXT -->
-        <div class="footer-brand">
+        <!-- LEFT -->
+        <div class="footer-intro">
           <p
             data-ka="პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და ინტერესების დასაცავად."
-            data-en="Professional legal support for the protection of your rights and interests."
+            data-en="Professional legal support to protect your rights and interests."
           >
             პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და
             ინტერესების დასაცავად.
           </p>
         </div>
 
-        <!-- NAVIGATION -->
-        <div>
+        <!-- CENTER -->
+        <div class="footer-nav">
           <h3 data-ka="ნავიგაცია" data-en="Navigation">ნავიგაცია</h3>
 
           <a href="index.html" data-ka="მთავარი" data-en="Home"> მთავარი </a>
@@ -398,35 +703,27 @@
           </a>
         </div>
 
-        <!-- CONTACT -->
+        <!-- RIGHT -->
         <div class="footer-contact">
           <h3 data-ka="კონტაქტი" data-en="Contact">კონტაქტი</h3>
 
-          <p>
-            <a href="tel:+995514549955"> +995 514 54 99 55 </a>
-          </p>
+          <a href="tel:+995514549955"> +995 514 54 99 55 </a>
 
-          <p>
-            <a href="tel:+995574401023"> +995 574 40 10 23 </a>
-          </p>
+          <a href="tel:+995574401023"> +995 574 40 10 23 </a>
 
-          <p>
-            <a href="mailto:grada.lawfirm@gmail.com">
-              grada.lawfirm@gmail.com
-            </a>
-          </p>
+          <a href="mailto:grada.lawfirm@gmail.com"> grada.lawfirm@gmail.com </a>
         </div>
       </div>
 
+      <!-- BOTTOM -->
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> GRADA Law Firm</p>
+        <p>© 2026 GRADA Law Firm</p>
 
         <p data-ka="ყველა უფლება დაცულია." data-en="All rights reserved.">
           ყველა უფლება დაცულია.
         </p>
       </div>
     </footer>
-
     <!-- JAVASCRIPT -->
     <script src="js/main.js"></script>
   </body>

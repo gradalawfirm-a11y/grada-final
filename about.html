@@ -225,21 +225,107 @@
        FOOTER
   ========================================== -->
 
-    <footer class="site-footer">
+    <footer class="site-footer grada-footer">
+      <!-- დეკორატიული network globe -->
+      <div class="footer-globe" aria-hidden="true">
+        <svg viewBox="0 0 520 520">
+          <!-- მთავარი სფერო -->
+          <circle class="globe-outline" cx="260" cy="260" r="235" />
+
+          <!-- სფეროს ხაზები -->
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="78" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="145" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="235" ry="205" />
+
+          <ellipse class="globe-grid" cx="260" cy="260" rx="75" ry="235" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="145" ry="235" />
+          <ellipse class="globe-grid" cx="260" cy="260" rx="205" ry="235" />
+
+          <!-- NETWORK LINES -->
+          <g class="network-lines">
+            <path
+              d="M72 126 L122 92 L178 132 L230 87 L291 130 L351 93 L410 137 L454 112"
+            />
+            <path
+              d="M72 126 L100 194 L161 170 L216 220 L282 184 L344 230 L410 197 L454 245"
+            />
+            <path
+              d="M100 194 L125 274 L192 243 L249 292 L315 260 L382 302 L454 245"
+            />
+            <path d="M125 274 L153 353 L220 322 L275 370 L341 332 L411 375" />
+            <path d="M153 353 L199 431 L260 391 L324 436 L411 375" />
+
+            <path d="M122 92 L161 170 L230 87" />
+            <path d="M178 132 L216 220 L291 130" />
+            <path d="M291 130 L344 230 L410 137" />
+
+            <path d="M161 170 L192 243 L216 220" />
+            <path d="M216 220 L249 292 L282 184" />
+            <path d="M282 184 L315 260 L344 230" />
+            <path d="M344 230 L382 302 L410 197" />
+
+            <path d="M192 243 L220 322 L249 292" />
+            <path d="M249 292 L275 370 L315 260" />
+            <path d="M315 260 L341 332 L382 302" />
+
+            <path d="M220 322 L199 431 L275 370" />
+            <path d="M275 370 L260 391 L324 436" />
+            <path d="M341 332 L324 436 L411 375" />
+          </g>
+
+          <!-- NETWORK DOTS -->
+          <g class="network-dots">
+            <circle cx="72" cy="126" r="4" />
+            <circle cx="122" cy="92" r="3" />
+            <circle cx="178" cy="132" r="4" />
+            <circle cx="230" cy="87" r="3" />
+            <circle cx="291" cy="130" r="4" />
+            <circle cx="351" cy="93" r="3" />
+            <circle cx="410" cy="137" r="4" />
+            <circle cx="454" cy="112" r="3" />
+
+            <circle cx="100" cy="194" r="3" />
+            <circle cx="161" cy="170" r="5" />
+            <circle cx="216" cy="220" r="3" />
+            <circle cx="282" cy="184" r="4" />
+            <circle cx="344" cy="230" r="4" />
+            <circle cx="410" cy="197" r="3" />
+            <circle cx="454" cy="245" r="4" />
+
+            <circle cx="125" cy="274" r="4" />
+            <circle cx="192" cy="243" r="3" />
+            <circle cx="249" cy="292" r="5" />
+            <circle cx="315" cy="260" r="3" />
+            <circle cx="382" cy="302" r="4" />
+
+            <circle cx="153" cy="353" r="3" />
+            <circle cx="220" cy="322" r="4" />
+            <circle cx="275" cy="370" r="5" />
+            <circle cx="341" cy="332" r="3" />
+            <circle cx="411" cy="375" r="4" />
+
+            <circle cx="199" cy="431" r="4" />
+            <circle cx="260" cy="391" r="3" />
+            <circle cx="324" cy="436" r="4" />
+          </g>
+        </svg>
+      </div>
+
+      <!-- MAIN FOOTER CONTENT -->
       <div class="container footer-grid">
-        <!-- BRAND TEXT -->
-        <div class="footer-brand">
+        <!-- LEFT -->
+        <div class="footer-intro">
           <p
             data-ka="პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და ინტერესების დასაცავად."
-            data-en="Professional legal support for the protection of your rights and interests."
+            data-en="Professional legal support to protect your rights and interests."
           >
             პროფესიონალური სამართლებრივი მხარდაჭერა თქვენი უფლებებისა და
             ინტერესების დასაცავად.
           </p>
         </div>
 
-        <!-- NAVIGATION -->
-        <div>
+        <!-- CENTER -->
+        <div class="footer-nav">
           <h3 data-ka="ნავიგაცია" data-en="Navigation">ნავიგაცია</h3>
 
           <a href="index.html" data-ka="მთავარი" data-en="Home"> მთავარი </a>
@@ -259,28 +345,21 @@
           </a>
         </div>
 
-        <!-- CONTACT -->
+        <!-- RIGHT -->
         <div class="footer-contact">
           <h3 data-ka="კონტაქტი" data-en="Contact">კონტაქტი</h3>
 
-          <p>
-            <a href="tel:+995514549955"> +995 514 54 99 55 </a>
-          </p>
+          <a href="tel:+995514549955"> +995 514 54 99 55 </a>
 
-          <p>
-            <a href="tel:+995574401023"> +995 574 40 10 23 </a>
-          </p>
+          <a href="tel:+995574401023"> +995 574 40 10 23 </a>
 
-          <p>
-            <a href="mailto:grada.lawfirm@gmail.com">
-              grada.lawfirm@gmail.com
-            </a>
-          </p>
+          <a href="mailto:grada.lawfirm@gmail.com"> grada.lawfirm@gmail.com </a>
         </div>
       </div>
 
+      <!-- BOTTOM -->
       <div class="container footer-bottom">
-        <p>© <span id="year"></span> GRADA Law Firm</p>
+        <p>© 2026 GRADA Law Firm</p>
 
         <p data-ka="ყველა უფლება დაცულია." data-en="All rights reserved.">
           ყველა უფლება დაცულია.
