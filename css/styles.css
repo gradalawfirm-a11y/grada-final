@@ -10300,3 +10300,28 @@ html body .contact-direct-section .contact-whatsapp-button {
   object-fit: cover !important;
   object-position: center top !important;
 }
+
+/* Keep footer copy aligned with the shared page container. */
+html body footer.site-footer.grada-footer .footer-grid,
+html body footer.site-footer.grada-footer .footer-bottom {
+  width: min(calc(100% - 40px), var(--max)) !important;
+  max-width: var(--max) !important;
+  padding-left: 75px !important;
+  padding-right: 75px !important;
+  box-sizing: border-box !important;
+}
+
+@media (max-width: 980px) {
+  html body footer.site-footer.grada-footer .footer-grid,
+  html body footer.site-footer.grada-footer .footer-bottom {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  html body footer.site-footer.grada-footer .footer-grid,
+  html body footer.site-footer.grada-footer .footer-bottom {
+    width: min(calc(100% - 28px), var(--max)) !important;
+  }
+}
