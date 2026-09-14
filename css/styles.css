@@ -908,7 +908,7 @@ textarea:focus-visible {
   display: flex;
   align-items: flex-end;
 
-  background-image: url("../assets/about-team.jpeg");
+  background-image: url("../assets/images/about-team.webp");
   background-size: 100% auto !important;
   background-position: center top !important;
   background-repeat: no-repeat !important;
@@ -1957,13 +1957,13 @@ textarea:focus-visible {
   }
 }
 /* =========================================================
-   LOGO — BIGGER + MORE LEFT
+   HEADER LOGO — CROPPED PNG SIZING
 ========================================================= */
 
 .brand {
-  width: 260px;
-  height: 96px;
-  flex: 0 0 260px;
+  width: 220px;
+  height: 80px;
+  flex: 0 0 220px;
 
   display: flex;
   align-items: center;
@@ -1971,7 +1971,7 @@ textarea:focus-visible {
 
   overflow: hidden;
 
-  margin-left: -30px;
+  margin-left: 0;
 }
 
 .brand img {
@@ -1980,7 +1980,19 @@ textarea:focus-visible {
 
   object-fit: contain;
 
-  transform: scale(1.55);
+  transform: none;
+}
+
+@media (max-width: 980px) {
+  .brand {
+    width: 185px;
+    height: 68px;
+    flex: 0 0 185px;
+  }
+
+  .brand img {
+    transform: none;
+  }
 }
 /* =========================================================
    HARD TRANSITION TO NAVY
@@ -2661,7 +2673,7 @@ textarea:focus-visible {
   align-items: center;
   justify-content: center;
 
-  background-image: url("../assets/contact-hero.jpg");
+  background-image: url("../assets/images/contact-hero.webp");
   background-size: 115% !important;
 
   /* მთავარი ცვლილება */
@@ -2888,7 +2900,7 @@ textarea:focus-visible {
 
   background:
     linear-gradient(rgba(246, 246, 244, 0.86), rgba(246, 246, 244, 0.86)),
-    url("../assets/contact-grada.jpeg");
+    url("../assets/images/contact-hero.webp");
 
   background-size: 720px auto;
   background-position: center;
@@ -3052,7 +3064,7 @@ body.contact-page .contact-image-hero {
   align-items: center;
   justify-content: center;
 
-  background-image: url("../assets/contact-hero.jpg") !important;
+  background-image: url("../assets/images/contact-hero.webp") !important;
   background-size: cover !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
@@ -9873,7 +9885,7 @@ html body footer.site-footer.grada-footer {
   padding: 48px 0 18px !important;
 
   /* მთავარი ფოტო */
-  background-image: url("../assets/footer-background.png") !important;
+  background-image: url("../assets/images/footer-background.webp") !important;
   background-repeat: no-repeat !important;
   background-position: center center !important;
   background-size: cover !important;
@@ -10063,7 +10075,7 @@ html body #contactFooter {
 
   background-color: #071842 !important;
 
-  background-image: url("../assets/footer-background.png") !important;
+  background-image: url("../assets/images/footer-background.webp") !important;
 
   background-repeat: no-repeat !important;
 
@@ -10089,6 +10101,66 @@ html body #contactFooter .grada-footer-network,
 html body #contactFooter .footer-globe,
 html body #contactFooter .footer-network-art {
   display: none !important;
+}
+
+/* Keep home slider content on the same horizontal grid as the header. */
+.home-page .grada-slide .container {
+  width: min(calc(100% - 40px), var(--max)) !important;
+  max-width: var(--max) !important;
+  margin-inline: auto !important;
+  padding-inline: 0 !important;
+}
+
+.home-page .grada-slide .grada-first-content {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+.home-page .grada-slide-about .grada-about-left {
+  padding-left: max(20px, calc((100vw - var(--max)) / 2)) !important;
+}
+
+.home-page .grada-practice-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 16px;
+  max-width: 540px;
+  margin-top: 20px;
+}
+
+.home-page .grada-practice-links a {
+  color: #071842;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 768px) {
+  .home-page .grada-slide-about .grada-about-left {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .home-page .grada-slide .container {
+    width: min(calc(100% - 28px), var(--max)) !important;
+  }
+
+  .home-page .grada-slide-about .grada-about-left {
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+  .home-page .grada-practice-links {
+    gap: 8px 12px;
+  }
+
+  .home-page .grada-practice-links a {
+    font-size: 11px;
+  }
 }
 
 /* შიდა კონტენტი background-ის ზემოთ */

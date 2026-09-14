@@ -4,13 +4,57 @@
     <meta charset="UTF-8" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
 
     <title
-      data-ka="სერვისები | GRADA Law Firm"
-      data-en="Services | GRADA Law Firm"
+      data-ka="სისხლის, სამოქალაქო და ადმინისტრაციული სამართალი | GRADA"
+      data-en="Criminal, Civil &amp; Administrative Law | GRADA"
     >
-      სერვისები | GRADA Law Firm
+      სისხლის, სამოქალაქო და ადმინისტრაციული სამართალი | GRADA
     </title>
+
+    <meta
+      name="description"
+      content="გაეცანით GRADA-ს მომსახურებას სისხლის, სამოქალაქო და ადმინისტრაციულ სამართალში: სამართლებრივი კონსულტაცია, დოკუმენტების მომზადება და სასამართლო წარმომადგენლობა."
+      data-ka="გაეცანით GRADA-ს მომსახურებას სისხლის, სამოქალაქო და ადმინისტრაციულ სამართალში: სამართლებრივი კონსულტაცია, დოკუმენტების მომზადება და სასამართლო წარმომადგენლობა."
+      data-en="Explore GRADA's criminal, civil and administrative law services, including legal advice, document preparation and representation before Georgian courts."
+    />
+
+    <meta name="robots" content="index, follow" />
+
+    <link rel="canonical" href="https://www.gradalaw.ge/services" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="GRADA Law Firm" />
+    <meta
+      property="og:title"
+      content="სისხლის, სამოქალაქო და ადმინისტრაციული სამართალი | GRADA"
+    />
+    <meta
+      property="og:description"
+      content="გაეცანით GRADA-ს მომსახურებას სისხლის, სამოქალაქო და ადმინისტრაციულ სამართალში: სამართლებრივი კონსულტაცია, დოკუმენტების მომზადება და სასამართლო წარმომადგენლობა."
+    />
+    <meta property="og:url" content="https://www.gradalaw.ge/services" />
+    <meta
+      property="og:image"
+      content="https://www.gradalaw.ge/assets/images/contact-hero.webp"
+    />
+    <meta property="og:locale" content="ka_GE" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="სისხლის, სამოქალაქო და ადმინისტრაციული სამართალი | GRADA"
+    />
+    <meta
+      name="twitter:description"
+      content="გაეცანით GRADA-ს მომსახურებას სისხლის, სამოქალაქო და ადმინისტრაციულ სამართალში: სამართლებრივი კონსულტაცია, დოკუმენტების მომზადება და სასამართლო წარმომადგენლობა."
+    />
+    <meta
+      name="twitter:image"
+      content="https://www.gradalaw.ge/assets/images/contact-hero.webp"
+    />
 
     <link rel="stylesheet" href="/css/styles.css" />
   </head>
@@ -23,7 +67,7 @@
     <header class="site-header" id="siteHeader">
       <div class="container header-inner">
         <a class="brand" href="index.html" aria-label="GRADA მთავარი გვერდი">
-          <img src="assets/logo.jpeg" alt="GRADA Law Firm" />
+          <img src="assets/images/logo.png" alt="GRADA Law Firm" />
         </a>
 
         <button
@@ -146,7 +190,7 @@
                01 — CRIMINAL LAW
           ================================================== -->
 
-          <article class="practice-item">
+          <article class="practice-item" id="criminal-law">
             <button
               class="practice-trigger"
               type="button"
@@ -228,7 +272,7 @@
                02 — CIVIL LAW
           ================================================== -->
 
-          <article class="practice-item">
+          <article class="practice-item" id="civil-law">
             <button
               class="practice-trigger"
               type="button"
@@ -347,7 +391,7 @@
                03 — ADMINISTRATIVE LAW
           ================================================== -->
 
-          <article class="practice-item">
+          <article class="practice-item" id="administrative-law">
             <button
               class="practice-trigger"
               type="button"
@@ -771,6 +815,15 @@
           }
         });
       });
+
+      const linkedPractice = document.getElementById(location.hash.slice(1));
+
+      if (linkedPractice && linkedPractice.classList.contains("practice-item")) {
+        linkedPractice.classList.add("active");
+        linkedPractice
+          .querySelector(".practice-trigger")
+          .setAttribute("aria-expanded", "true");
+      }
     </script>
   </body>
 </html>
